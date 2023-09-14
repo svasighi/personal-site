@@ -1,0 +1,35 @@
+.wrapper {
+  @apply flex space-x-4;
+
+  &:hover .list_decoration .list_bullet {
+    @apply bg-amber-400;
+  }
+
+  & .list_decoration {
+    @apply flex flex-col items-center;
+
+    & .list_bullet {
+      @apply h-6 w-6 rounded-full bg-amber-200 transition-colors duration-500 ease-in-out;
+    }
+
+    & .list_dashed {
+      @apply w-0 flex-1 border-l border-dashed border-gray-400;
+    }
+  }
+
+  & .list_information {
+    @apply mb-5 flex flex-1 flex-col space-y-2;
+
+    & .title {
+      @apply text-base font-semibold leading-normal text-gray-700;
+
+      & .subtitle {
+        @apply text-sm font-medium leading-tight text-gray-400;
+      }
+    }
+
+    & .description {
+      @apply text-sm font-normal leading-tight text-gray-400;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  @apply flex flex-col space-y-20;
+  & .description {
+    @apply text-base font-normal leading-normal text-gray-700;
+    & .hyphens-text {
+      @apply hyphens-auto text-start;
+    }
+    & .list-text {
+      @apply mt-10 flex flex-wrap items-center;
+      & .list {
+        @apply mx-3 inline-flex w-20 items-center justify-center space-x-2;
+
+        & img {
+          @apply h-full;
+        }
+        & ul {
+          @apply min-w-max flex-1 space-y-2 text-base font-semibold leading-normal text-gray-700;
+        }
+      }
+    }
+  }
+}

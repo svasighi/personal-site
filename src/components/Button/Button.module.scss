@@ -1,0 +1,17 @@
+.button {
+  @apply mx-auto mt-10 inline-flex  max-w-lg cursor-pointer items-center justify-center gap-1.5 rounded-3xl border-b-4 border-slate-800 bg-amber-100 px-6 py-2 text-base font-medium leading-normal text-gray-800;
+
+  &.active {
+    @apply transition-all duration-300 active:border-b;
+
+    &:hover {
+      @apply bg-amber-200;
+    }
+  }
+  &.disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+  &.rounded {
+    @apply rounded-full;
+  }
+}

@@ -4,7 +4,8 @@ import defaultTheme from "tailwindcss/defaultTheme";
 export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/sections/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   safelist: ["bg-grid", "bg-side-bottom"],

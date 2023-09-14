@@ -1,0 +1,22 @@
+.wrapper {
+  @apply flex h-72 w-full flex-col space-y-4 rounded-3xl border border-gray-300 bg-gray-50 px-8 py-9 lg:px-10;
+
+  & .author {
+    @apply inline-flex items-center justify-start gap-4;
+
+    & img {
+      @apply h-12 w-12 rounded-3xl;
+    }
+
+    & .details {
+      @apply inline-flex flex-col items-start justify-start gap-px;
+
+      & .name {
+        @apply text-base font-semibold leading-normal text-gray-700;
+      }
+      & .position {
+        @apply text-sm font-normal leading-tight text-gray-400;
+      }
+    }
+  }
+}

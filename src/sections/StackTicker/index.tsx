@@ -24,7 +24,7 @@ const StackTicker = () => {
 		} else {
 			setAnimation(animationStates[0]);
 		}
-	}, [isLg]);
+	}, [isLg, animationStates]);
 
 	return (
 		<div className={styles.wrapper}>

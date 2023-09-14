@@ -1,6 +1,10 @@
 import Bio from '@/src/sections/Bio';
+import Contact from '@/src/sections/Contact';
+import Experience from '@/src/sections/Experience';
+import Portfolio from '@/src/sections/Portfolio';
 import Sidebar from '@/src/sections/Sidebar';
 import StackTicker from '@/src/sections/StackTicker';
+import Testimonials from '@/src/sections/Testimonials';
 
 export default function Home() {
 	return (
@@ -12,7 +16,10 @@ export default function Home() {
 				<div className='h-auto flex-1 rounded-xl text-justify lg:overflow-auto'>
 					<div className='flex flex-col space-y-12 pt-12 md:pt-16 lg:pt-20'>
 						<Bio />
-
+						<Testimonials />
+						<Experience />
+						<Portfolio />
+						<Contact />
 						<div className='inline-flex flex-col items-center justify-start py-8'>
 							<div className='text-center text-base font-normal leading-normal text-black'>
 								designed and developed By me
