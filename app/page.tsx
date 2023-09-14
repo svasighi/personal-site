@@ -1,5 +1,6 @@
 import Bio from '@/src/sections/Bio';
 import Sidebar from '@/src/sections/Sidebar';
+import StackTicker from '@/src/sections/StackTicker';
 
 export default function Home() {
 	return (
@@ -7,6 +8,7 @@ export default function Home() {
 			<div className='mx-auto box-border flex h-screen flex-col justify-between px-4 md:container sm:px-8 lg:flex-row lg:space-x-10 lg:overflow-hidden lg:px-12 xl:px-24'>
 				<Sidebar />
 
+				<StackTicker />
 				<div className='h-auto flex-1 rounded-xl text-justify lg:overflow-auto'>
 					<div className='flex flex-col space-y-12 pt-12 md:pt-16 lg:pt-20'>
 						<Bio />

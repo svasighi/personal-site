@@ -1,0 +1,18 @@
+export const Stacks = [
+  { id: 0, image: "/stack/storybook.svg", name: "Storybook" },
+  { id: 1, image: "/stack/sass.svg", name: "Sass" },
+  { id: 2, image: "/stack/nextjs.svg", name: "Nextjs" },
+  { id: 3, image: "/stack/react.svg", name: "React" },
+  { id: 4, image: "/stack/webpack.svg", name: "Webpack" },
+  { id: 5, image: "/stack/docker.svg", name: "Docker" },
+  { id: 6, image: "/stack/babel.svg", name: "Babel" },
+  { id: 7, image: "/stack/ts.svg", name: "TypeScript" },
+  { id: 8, image: "/stack/tailwind.svg", name: "Tailwind" },
+  { id: 9, image: "/stack/pwa.svg", name: "PWA" },
+  { id: 10, image: "/stack/query.svg", name: "React Query" },
+  { id: 11, image: "/stack/vite.svg", name: "Vite" },
+  { id: 12, image: "/stack/mui.svg", name: "MUI" },
+  { id: 13, image: "/stack/graphql.svg", name: "GraphQl" },
+  { id: 14, image: "/stack/eslint.svg", name: "Eslint" },
+  { id: 15, image: "/stack/figma.svg", name: "Figma" },
+];
