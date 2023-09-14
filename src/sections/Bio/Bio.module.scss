@@ -1,0 +1,30 @@
+.heading {
+	@apply font-headline flex flex-col items-start space-y-2;
+
+	& .name {
+		@apply flex items-center;
+		& hr {
+			@apply mr-1.5 w-12 border-gray-800;
+		}
+		& div {
+			@apply text-xl font-semibold leading-7 text-gray-800;
+		}
+	}
+	& .role {
+		@apply text-3xl font-semibold leading-9;
+		& span {
+			&:first-child {
+				@apply text-gray-800;
+			}
+			&:first-child {
+				@apply text-gray-400;
+			}
+		}
+		& img {
+			@apply mb-2 ml-2 inline;
+		}
+	}
+}
+.brief {
+	@apply text-base font-medium leading-normal text-gray-700;
+}
