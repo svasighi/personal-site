@@ -3,11 +3,11 @@ import { TabHeader } from './TabHeader';
 import { useState } from 'react';
 
 import { motion } from 'framer-motion';
-import Section from '@/src/components/Section';
+import Section from '@components/Section';
 
 import { tabs } from './Tabs/';
 
-const Portfolio = () => {
+export const Portfolio = () => {
 	const [activeTab, setActiveTab] = useState<string>(tabs[0].id);
 
 	return (
@@ -31,5 +31,3 @@ const Portfolio = () => {
 		</Section>
 	);
 };
-
-export default Portfolio;

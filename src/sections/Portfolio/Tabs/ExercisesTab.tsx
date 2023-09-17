@@ -1,4 +1,4 @@
-import { EXERCISES } from '@/src/constants/portfolio';
+import { EXERCISES } from '@constants/portfolio';
 import { PortfolioItem } from '../PortfolioItem';
 
 import styles from '../Portfolio.module.scss';

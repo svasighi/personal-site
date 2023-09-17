@@ -2,7 +2,10 @@ import Image from 'next/image';
 import styles from './sidebar.module.scss';
 import Link from 'next/link';
 
-const Sidebar = () => {
+//assets
+import profile from '@public/profile.png';
+
+export const Sidebar = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.inner}>
@@ -51,14 +54,8 @@ const Sidebar = () => {
 			</div>
 			<div className={styles.picture}>
 				<div className={styles.pill}></div>
-				<Image
-					width={192}
-					height={128}
-					src='/profile.png'
-					alt='shadmehr vasighi'
-				/>
+				<Image src={profile} alt='shadmehr vasighi' />
 			</div>
 		</div>
 	);
 };
-export default Sidebar;

@@ -1,14 +1,14 @@
 'use client';
 
-import Button from '@/src/components/Button';
-import Section from '@/src/components/Section';
+import Button from '@components/Button';
+import Section from '@components/Section';
 import styles from './Contact.module.scss';
 import Image from 'next/image';
 
-import flash from '@/public/flash.svg';
-import wavy from '@/public/wavy.svg';
+import flash from '@public/flash.svg';
+import wavy from '@public/wavy.svg';
 
-const Contact = () => {
+export const Contact = () => {
 	return (
 		<Section
 			title={
@@ -44,5 +44,3 @@ const Contact = () => {
 		</Section>
 	);
 };
-
-export default Contact;

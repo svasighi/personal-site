@@ -1,11 +1,15 @@
 'use client';
 
-import Section from '../../components/Section';
-import { MY_BIO } from '../../constants/texts';
+import Section from '@components/Section';
+import { MY_BIO } from '@constants/texts';
 import styles from './Bio.module.scss';
+
+//assets
 import Image from 'next/image';
 
-const Bio = () => {
+import flash from '@public/flash.svg';
+
+export const Bio = () => {
 	return (
 		<Section className='flex flex-col space-y-8'>
 			<div className={styles.heading}>
@@ -16,7 +20,7 @@ const Bio = () => {
 				<div className={styles.role}>
 					<span>
 						Frontend developer
-						<Image src='/flash.svg' alt='flash' width={16} height={16} />
+						<Image src={flash} alt='flash' />
 						<br />
 					</span>
 					<span>Ex-Backend developer</span>
@@ -28,4 +32,3 @@ const Bio = () => {
 		</Section>
 	);
 };
-export default Bio;

@@ -1,22 +1,21 @@
 'use client';
 
-import Section from '@/src/components/Section';
-import Player from '@/src/components/Player';
-
-import styles from './Testimonials.module.scss';
 import Image from 'next/image';
 
-const Testimonials = () => {
+import Section from '@components/Section';
+import Player from '@components/Player';
+
+import styles from './Testimonials.module.scss';
+
+//assets
+import testimonial from '@public/mr-gholami.png';
+
+export const Testimonials = () => {
 	return (
 		<Section title='Trusted by Great people'>
 			<div className={styles.wrapper}>
 				<div className={styles.author}>
-					<Image
-						src='/mr-gholami.png'
-						width={48}
-						height={48}
-						alt='Mohsen Gholami'
-					/>
+					<Image src={testimonial} alt='Mohsen Gholami' />
 					<div className={styles.details}>
 						<div className={styles.name}>Mohsen Gholam</div>
 						<div className={styles.position}>founder at MaherHa.com</div>
@@ -35,4 +34,3 @@ const Testimonials = () => {
 		</Section>
 	);
 };
-export default Testimonials;

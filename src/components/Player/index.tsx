@@ -13,7 +13,7 @@ const Player = ({
 	const [playing, setPlaying] = useState<boolean>(false);
 	const spectrumRef = useRef<WaveSurfer>();
 
-	useLayoutEffect(() => {
+	useEffect(() => {
 		if (!spectrumRef.current) {
 			const initial = WaveSurfer.create(SPECTRUM_CONFIG);
 			initial.load(file_url);
@@ -25,9 +25,7 @@ const Player = ({
 		}
 	});
 
-	useEffect(() => {
-		playing ? spectrumRef.current?.play() : spectrumRef.current?.pause();
-	}, [playing]);
+	playing ? spectrumRef.current?.play() : spectrumRef.current?.pause();
 
 	const togglePlayer = () => {
 		setPlaying(!playing);

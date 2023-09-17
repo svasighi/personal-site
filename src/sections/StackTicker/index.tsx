@@ -1,17 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Stacks } from '../../constants/stacks';
-
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+import { Stacks } from '@constants/stacks';
+
 import styles from './StackTicker.module.scss';
-import { useBreakpoint } from '@/src/hooks/useBreakpoints';
-import Image from 'next/image';
 
-const StackTicker = () => {
-	const { isLg } = useBreakpoint('lg');
-
+export const StackTicker = ({ isLg }: { isLg: Boolean }) => {
 	const animationStates = [
 		{ x: -(Stacks.length * 192) },
 		{ y: -(Stacks.length * 192) },
@@ -63,4 +60,3 @@ const StackTicker = () => {
 		</div>
 	);
 };
-export default StackTicker;

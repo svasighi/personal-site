@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 import classNames from 'classnames';
@@ -12,14 +12,15 @@ declare type SectionProps = {
 };
 
 const Section = ({ children, title, className }: SectionProps) => {
-	const [isInView, setIsInView] = useState(false);
-
 	return (
 		<motion.div
-			initial={false}
-			animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-			transition={{ duration: 1 }}
-			onViewportEnter={() => setIsInView(true)}
+			initial='hidden'
+			transition={{ duration: 0.6 }}
+			whileInView='visible'
+			variants={{
+				visible: { opacity: 1, y: 0 },
+				hidden: { opacity: 0, y: 50 },
+			}}
 			className={classNames('flex flex-col', { 'space-y-4': title }, className)}
 		>
 			{title && (
