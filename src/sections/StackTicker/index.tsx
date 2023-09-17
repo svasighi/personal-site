@@ -6,9 +6,13 @@ import { motion } from 'framer-motion';
 
 import { Stacks } from '@constants/stacks';
 
+import { useBreakpoint } from '@hooks/useBreakpoints';
+
 import styles from './StackTicker.module.scss';
 
-export const StackTicker = ({ isLg }: { isLg: Boolean }) => {
+export const StackTicker = () => {
+	const { isLg } = useBreakpoint('lg');
+
 	const animationStates = [
 		{ x: -(Stacks.length * 192) },
 		{ y: -(Stacks.length * 192) },
@@ -21,7 +25,7 @@ export const StackTicker = ({ isLg }: { isLg: Boolean }) => {
 		} else {
 			setAnimation(animationStates[0]);
 		}
-	}, [isLg, animationStates]);
+	}, [isLg]);
 
 	return (
 		<div className={styles.wrapper}>
