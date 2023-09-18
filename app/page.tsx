@@ -13,7 +13,7 @@ import SoftScroll from '@/src/components/SoftScroll';
 export default function Home() {
 	return (
 		<>
-			<div className='mx-auto box-border flex h-screen flex-col justify-between px-4 md:container sm:px-8 lg:flex-row lg:space-x-10 lg:overflow-hidden lg:px-12 xl:px-24'>
+			<div className='mx-auto box-border flex h-fit flex-col justify-between px-4 md:container sm:px-8 lg:h-screen lg:flex-row lg:space-x-10 lg:overflow-hidden lg:px-12 xl:px-24'>
 				<Sidebar />
 
 				<StackTicker />

@@ -1,7 +1,7 @@
 .wrapper {
-	@apply relative mb-16 h-auto w-full pb-4 pt-12 md:pt-16 lg:w-96 lg:pb-12 lg:pt-20;
+	@apply relative mb-16 h-fit w-full pb-4 pt-12 md:pt-16 lg:w-96 lg:pb-12 lg:pt-20;
 	& .inner {
-		@apply before:bg-grid relative flex h-[535px] flex-col items-stretch  justify-between overflow-hidden rounded-2xl border border-slate-800 bg-amber-100 before:absolute before:h-full before:w-full before:bg-repeat md:h-[612px] lg:h-[700px];
+		@apply relative flex h-[535px] flex-col items-stretch justify-between overflow-hidden rounded-2xl border border-slate-800 bg-amber-100 before:absolute before:h-full before:w-full before:bg-grid before:bg-repeat md:h-[612px] lg:h-[700px];
 		& .top {
 			@apply flex justify-between px-7 pt-10 text-gray-900;
 
@@ -79,11 +79,11 @@
 			}
 		}
 		& .inner_bottom_bg {
-			@apply bg-side-bottom absolute bottom-0 left-0 h-16 w-full justify-center bg-center bg-no-repeat;
+			@apply absolute bottom-0 left-0 h-16 w-full justify-center bg-side-bottom bg-center bg-no-repeat;
 		}
 	}
 	& .picture {
-		@apply animate-updown absolute left-0 right-0 lg:-bottom-4;
+		@apply absolute bottom-0 left-0 right-0 animate-updown lg:bottom-9;
 
 		& .pill {
 			@apply relative z-10 mx-auto h-60 w-20 rounded-full border border-black bg-gradient-to-b from-amber-100/100 to-amber-300/20 to-40% backdrop-blur-xl  md:h-60 md:w-24;

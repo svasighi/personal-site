@@ -31,7 +31,7 @@ const SoftScroll = ({ children }: { children: ReactNode }) => {
 	return (
 		<div
 			ref={isLg ? scrollableRef : null}
-			className='h-auto flex-1 rounded-xl text-justify lg:overflow-auto'
+			className='h-auto flex-1 overflow-auto rounded-xl text-justify'
 		>
 			{children}
 		</div>
