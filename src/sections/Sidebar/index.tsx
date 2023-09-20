@@ -54,7 +54,7 @@ export const Sidebar = () => {
 			</div>
 			<div className={styles.picture}>
 				<div className={styles.pill}></div>
-				<Image src={profile} alt='shadmehr vasighi' />
+				<Image src={profile} alt='shadmehr vasighi' height={224} />
 			</div>
 		</div>
 	);
