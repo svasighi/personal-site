@@ -42,7 +42,7 @@ export const Sidebar = () => {
 					</div>
 					<div className={styles.fifth}>
 						<div>
-							<span>+2</span>
+							<span>+4</span>
 							years of
 							<br />
 							Experience
@@ -54,7 +54,7 @@ export const Sidebar = () => {
 			</div>
 			<div className={styles.picture}>
 				<div className={styles.pill}></div>
-				<Image src={profile} alt='shadmehr vasighi' height={224} />
+				<Image src={profile} alt='shadmehr vasighi' quality={100} />
 			</div>
 		</div>
 	);
