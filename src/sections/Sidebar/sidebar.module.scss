@@ -89,7 +89,7 @@
 			@apply relative z-10 mx-auto h-60 w-20 rounded-full border border-black bg-gradient-to-b from-amber-100/100 to-amber-300/20 to-40% backdrop-blur-xl  md:h-60 md:w-24;
 		}
 		& img {
-			@apply absolute bottom-10 left-0 right-0 z-10 mx-auto h-48 w-52 md:left-4 md:h-48 md:w-52;
+			@apply absolute bottom-10 left-0 right-0 z-10 mx-auto h-56 w-52 md:left-4 md:h-56 md:w-52;
 		}
 	}
 }
