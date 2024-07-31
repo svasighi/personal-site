@@ -8,7 +8,13 @@ import styles from './Bio.module.scss';
 import Image from 'next/image';
 
 import flash from '@public/flash.svg';
-import { headlineFont } from '@/app/layout';
+import localFont from 'next/font/local';
+import { Inter } from 'next/font/google';
+
+export const headlineFont = localFont({
+	src: '../public/fonts/headline.woff2',
+	display: 'swap',
+});
 
 export const Bio = () => {
 	return (
