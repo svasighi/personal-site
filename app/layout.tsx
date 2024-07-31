@@ -5,7 +5,7 @@ import localFont from 'next/font/local';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const myFont = localFont({
+export const headlineFont = localFont({
 	src: '../public/fonts/headline.woff2',
 	display: 'swap',
 });
@@ -23,7 +23,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en' className={myFont.className}>
+		<html lang='en'>
 			<body className={inter.className}>{children}</body>
 		</html>
 	);

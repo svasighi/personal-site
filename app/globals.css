@@ -1,5 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+@import 'https://unpkg.com/open-props/durations.min.css';
 
 @font-face {
 	font-family: 'headline';
@@ -10,6 +11,19 @@
 
 body {
 	@apply overflow-x-hidden selection:bg-amber-100 selection:text-slate-500 lg:overflow-hidden;
+}
+body::before {
+	background-image: url(/noise.gif);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.05;
+	display: block;
+	content: '';
+	pointer-events: none;
+	mix-blend-mode: overlay;
 }
 ::-webkit-scrollbar {
 	width: 0;

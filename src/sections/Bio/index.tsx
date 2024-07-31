@@ -8,11 +8,12 @@ import styles from './Bio.module.scss';
 import Image from 'next/image';
 
 import flash from '@public/flash.svg';
+import { headlineFont } from '@/app/layout';
 
 export const Bio = () => {
 	return (
 		<Section className='flex flex-col space-y-8'>
-			<div className={styles.heading}>
+			<div className={styles.heading + ' ' + headlineFont.className}>
 				<div className={styles.name}>
 					<hr />
 					<div>I’m Shadmehr Vasighi</div>
