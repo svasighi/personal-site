@@ -8,14 +8,7 @@ import {
 	Testimonials,
 } from '@sections/index';
 import SoftScroll from '@/src/components/SoftScroll';
-import { HeartIcon } from '@heroicons/react/24/outline';
 import { PhoneIcon } from '@heroicons/react/24/solid';
-import localFont from 'next/font/local';
-
-export const headlineFont = localFont({
-	src: '../public/fonts/headline.woff2',
-	display: 'swap',
-});
 
 //Todo move stylesheet to it's module
 export default function Home() {
