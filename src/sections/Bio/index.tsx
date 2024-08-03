@@ -9,7 +9,6 @@ import Image from 'next/image';
 
 import flash from '@public/flash.svg';
 import localFont from 'next/font/local';
-import { Inter } from 'next/font/google';
 
 export const headlineFont = localFont({
 	src: '../../../public/fonts/headline.woff2',
