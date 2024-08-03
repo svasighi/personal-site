@@ -12,7 +12,7 @@ import localFont from 'next/font/local';
 import { Inter } from 'next/font/google';
 
 export const headlineFont = localFont({
-	src: '../public/fonts/headline.woff2',
+	src: '../../../public/fonts/headline.woff2',
 	display: 'swap',
 });
 
